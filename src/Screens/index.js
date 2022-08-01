@@ -3,7 +3,7 @@ import Login from './Login';
 import Cadastrar_Med from './Cadastrar_Med';
 import Editar_Med from './Editar_Med';
 import Lista_Med from './Lista_Med';
-import SignUp from './SignUp';
+import Logout from './Logout';
 
 export {
    Home,
@@ -11,6 +11,6 @@ export {
    Cadastrar_Med,
    Editar_Med,
    Lista_Med,
-   SignUp
+   Logout
      
 };

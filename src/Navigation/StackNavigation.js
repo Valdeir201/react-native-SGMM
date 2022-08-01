@@ -8,7 +8,7 @@ import {
     Cadastrar_Med,
     Editar_Med,
     Lista_Med,
-    SignUp
+    Logout
 } from '../Screens'
 
 const Stack = createNativeStackNavigator()
@@ -38,7 +38,7 @@ export function Cadastrar_MedNavigation() {
             screenOptions={{ headerShown: true }}
         >
             <Stack.Screen
-                name='Cadastrar_Med'
+                name='Cadastrar Medicamentos'
                 component={Cadastrar_Med}
             />
         </Stack.Navigator>
@@ -51,7 +51,7 @@ export function Editar_MedNavigation() {
             screenOptions={{ headerShown: true }}
         >
             <Stack.Screen
-                name='Editar_Med'
+                name='Editar Medicamentos'
                 component={Editar_Med}
             />
         </Stack.Navigator>
@@ -64,7 +64,7 @@ export function Lista_MedNavigation() {
             screenOptions={{ headerShown: true }}
         >
             <Stack.Screen
-                name='Lista_Med'
+                name='Lista de Medicamentos'
                 component={Lista_Med}
             />
 
@@ -72,14 +72,14 @@ export function Lista_MedNavigation() {
         </Stack.Navigator>
     )
 }
-export function SignUpNavigation() {
+export function LogoutNavigation() {
     return (
         <Stack.Navigator
             screenOptions={{ headerShown: true }}
         >
             <Stack.Screen
-                name='SignUp'
-                component={SignUp}
+                name='Logout'
+                component={Logout}
             />
 
          
