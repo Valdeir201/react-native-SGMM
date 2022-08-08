@@ -5,9 +5,29 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#000'
+        backgroundColor: '#006400'
     },
     text: {
-        color: '#fff'
-    }
+        color: '#fff',
+        fontSize: 18,
+        margin: 15
+    },
+    logo: { 
+        height: 60,
+        width: 200,
+       
+        borderRadius: 12
+    },
+    input: { 
+        marginBottom: 10,
+        padding:10,
+        width: 320,
+        fontSize: 16,
+        fontWeight: 'bold',
+        backgroundColor: '#fff',
+       
+        borderRadius: 12
+    },
+  
+  
 })

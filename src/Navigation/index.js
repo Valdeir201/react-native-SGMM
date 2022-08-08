@@ -1,9 +1,11 @@
-import React from 'react'
-import StackNavigation from './StackNavigation'
-import { NavigationContainer } from '@react-navigation/native'
+import React from 'react';
+import StackNavigation from './StackNavigation';
+import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
 
 export default props => (
     <NavigationContainer>
-        <StackNavigation />
+          <StatusBar style="dark" translucent backgroundColor="transparent" />
+      <StackNavigation />
     </NavigationContainer>
 )

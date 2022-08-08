@@ -36,12 +36,12 @@ export default function HomeNavigationTabs() {
                             <Icon
                                 name='home'
                                 size={20}
-                                color={focused ? '#0a9396' : '#d62828'}
+                                color={focused ? '#7B68EE' : '#006400'}
                             />
                             <Text
                                 allowFontScaling={false}
                                 style={{
-                                    color: focused ? '#0a9396' : '#d62828',
+                                    color: focused ? '#7B68EE' : '#006400',
                                     width: 50,
                                     fontSize: 11,
                                     textAlign: 'center'
@@ -62,12 +62,12 @@ export default function HomeNavigationTabs() {
                             <Icon
                                 name='list-alt'
                                 size={20}
-                                color={focused ? '#0a9396' : '#d62828'}
+                                color={focused ? '#7B68EE' : '#006400'}
                             />
                             <Text
                                 allowFontScaling={false}
                                 style={{
-                                    color: focused ? '#0a9396' : '#d62828',
+                                    color: focused ? '#7B68EE' : '#006400',
                                     width: 50,
                                     fontSize: 11,
                                     textAlign: 'center'
@@ -88,12 +88,12 @@ export default function HomeNavigationTabs() {
                             <Icon
                                 name='folder-plus'
                                 size={20}
-                                color={focused ? '#0a9396' : '#d62828'}
+                                color={focused ? '#7B68EE' : '#006400'}
                             />
                                                         <Text
                                 allowFontScaling={false}
                                 style={{
-                                    color: focused ? '#0a9396' : '#d62828',
+                                    color: focused ? '#7B68EE' : '#006400',
                                     width: 50,
                                     fontSize: 11,
                                     textAlign: 'center'
@@ -114,12 +114,12 @@ export default function HomeNavigationTabs() {
                             <Icon
                                 name='edit'
                                 size={20}
-                                color={focused ? '#0a9396' : '#d62828'}
+                                color={focused ? '#7B68EE' : '#006400'}
                             />
                                                         <Text
                                 allowFontScaling={false}
                                 style={{
-                                    color: focused ? '#0a9396' : '#d62828',
+                                    color: focused ? '#7B68EE' : '#006400',
                                     width: 50,
                                     fontSize: 11,
                                     textAlign: 'center'
@@ -140,12 +140,12 @@ export default function HomeNavigationTabs() {
                         <Icon
                             name='sign-out-alt'
                             size={20}
-                            color={focused ? '#0a9396' : '#d62828'}
+                            color={focused ? '#7B68EE' : '#006400'}
                         />
                         <Text
                             allowFontScaling={false}
                             style={{
-                                color: focused ? '#0a9396' : '#d62828',
+                                color: focused ? '#7B68EE' : '#006400',
                                 width: 50,
                                 fontSize: 11,
                                 textAlign: 'center'
