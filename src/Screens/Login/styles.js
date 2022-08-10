@@ -8,14 +8,13 @@ export default StyleSheet.create({
         backgroundColor: '#006400'
     },
     text: {
-        color: '#fff',
-        fontSize: 18,
+        fontWeight: 'bold',
+        fontSize: 16,
         margin: 15
     },
     logo: { 
         height: 60,
         width: 200,
-       
         borderRadius: 12
     },
     input: { 
@@ -28,6 +27,26 @@ export default StyleSheet.create({
        
         borderRadius: 12
     },
+    btn: { 
+        marginBottom: 10,
+        padding:10,
+        width: 320,
+        fontSize: 18,
+        fontWeight: 'bold',
+        backgroundColor: '#7B68EE',
+        alignItems: 'center',
+        justifyContent: 'center',
+       
+        borderRadius: 12
+    },
+    textbtn: { 
+      
+        fontSize: 18,
+        fontWeight: 'bold',
+       
+        
+    },
+  
   
   
 })

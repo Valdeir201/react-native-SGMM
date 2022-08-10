@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, Image, TextInput } from 'react-native';
+import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
 import Styles from './styles';
 
 
@@ -12,6 +12,8 @@ export default props => (
         <TextInput style={Styles.input} placeholder="  Digite seu usuário"  />
         <TextInput style={Styles.input} secureTextEntry={true} placeholder="  Digite sua senha"  />
 
-        <Button title='Fazer Login' onPress={() => props.navigation.navigate('Home')} />
+        <TouchableOpacity style={Styles.btn} onPress={() => props.navigation.navigate('Home')} >
+            <Text style={Styles.textbtn} > Login </Text>
+        </TouchableOpacity>
     </View>
 )
