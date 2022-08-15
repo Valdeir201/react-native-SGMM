@@ -3,6 +3,7 @@ import { View, Text, SafeAreaView, ImageBackground } from 'react-native';
 import Styles from './styles';
 import Temperatura from '../../components/Temperatura';
 import Umidade from '../../components/Umidade';
+import Avisos from '../../components/Avisos';
 
 const Fundo = require("../../assets/Imagens/fundo01.jpg");
 
@@ -12,7 +13,7 @@ export default props => (
         <Temperatura/>
         <Umidade/>
         
-        
+        <Avisos/>
  
     </ImageBackground>
 )
