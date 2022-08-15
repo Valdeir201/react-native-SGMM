@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
+import { View, Text, TouchableOpacity, Image, TextInput, SafeAreaView} from 'react-native';
 import Styles from './styles';
 
 
 export default props => (
-    <View style={Styles.container}>
-           <Image source={require('../../assets/logo.png')} style={Styles.logo} />
+
+    <SafeAreaView  style={Styles.container}>
+           <Image source={require('../../assets/Imagens/logo.png')} style={Styles.logo} />
 
         <Text style={Styles.text}>Login obrigatório para acessar o sistema!</Text>
 
@@ -15,5 +16,5 @@ export default props => (
         <TouchableOpacity style={Styles.btn} onPress={() => props.navigation.navigate('Home')} >
             <Text style={Styles.textbtn} > Login </Text>
         </TouchableOpacity>
-    </View>
+    </SafeAreaView>
 )

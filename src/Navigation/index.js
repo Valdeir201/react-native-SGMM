@@ -5,7 +5,10 @@ import { StatusBar } from 'expo-status-bar';
 
 export default props => (
     <NavigationContainer>
+        
           <StatusBar style="dark" translucent backgroundColor="transparent" />
+          
       <StackNavigation />
+
     </NavigationContainer>
 )
