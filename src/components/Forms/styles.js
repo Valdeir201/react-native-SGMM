@@ -1,14 +1,35 @@
 import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
+    container: {
 
-    fundo: {
-        flex: 1,
+        height: '20%',
+        width: '70%',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff'
+       // backgroundColor: '#fff',
+      
+      
     },
+    text: {
+        fontWeight: 'bold',
+        fontSize: 16,
+        margin: 15,
+      
+        
+    },
+   
     
+    input: { 
+        marginBottom: 7,
+        paddingLeft: 10,
+        width: 320,
+        fontSize: 16,
+        fontWeight: 'bold',
+        backgroundColor: '#fff',
+       
+        borderRadius: 12
+    },
     btn: { 
         marginBottom: 10,
         padding:10,
@@ -23,9 +44,12 @@ export default StyleSheet.create({
     },
     textbtn: { 
       
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold',
        
         
     },
+
+
+
 })
