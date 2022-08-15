@@ -18,5 +18,18 @@ export default StyleSheet.create({
         fontSize: 20,
         color: '#000',
         backgroundColor: '#fff'
+    },
+    btnn:{
+        marginBottom: 10,
+        padding:10,
+        width: 320,
+        fontSize: 18,
+        fontWeight: 'bold',
+        backgroundColor: '#fc0303',
+        alignItems: 'center',
+        justifyContent: 'center',
+       
+        borderRadius: 12
+
     }
 })
