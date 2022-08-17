@@ -7,7 +7,7 @@ import Styles from './styles';
 const Fundo = require("../../assets/Imagens/fundo01.jpg");
 
 export default props => (
-    <ImageBackground  source={Fundo} resizeMode='cover' style={Styles.fundo}>
+    <ImageBackground imageStyle={{opacity:0.3}} source={Fundo} resizeMode='cover' style={Styles.fundo}>
         <View>
   
         <TouchableOpacity 

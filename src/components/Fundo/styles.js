@@ -12,7 +12,8 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#006400'
+       // opacity: 0.5,
+      // backgroundColor: '#ff0'
     },
 
     text: {

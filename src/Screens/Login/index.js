@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import firebase from "../../config/firebase";
-import { View, Text, TouchableOpacity, Image, TextInput, SafeAreaView} from 'react-native';
+import { View, Text, TouchableOpacity, Image, TextInput, SafeAreaView, ImageBackground} from 'react-native';
 import Styles from './styles';
 
 
@@ -21,10 +21,10 @@ export default function Login({navigation}){
             let errorMessage = error.message;
         });
 }
-
+const Fundo = require("../../assets/Imagens/fundo01.jpg");
     return(
         
-    <SafeAreaView  style={Styles.container}>
+    <ImageBackground imageStyle={{opacity:0.3}}  source={Fundo}  resizeMode='cover' style={Styles.container}>
     <Image source={require('../../assets/Imagens/logo.png')} style={Styles.logo} />
 
  <Text style={Styles.text}>Login obrigatório para acessar o sistema!</Text>
@@ -35,7 +35,7 @@ export default function Login({navigation}){
  <TouchableOpacity style={Styles.btn} onPress={loginFirebase}>
      <Text style={Styles.textbtn} > Login </Text>
  </TouchableOpacity>
-</SafeAreaView>
+</ImageBackground>
 
     )
 }
