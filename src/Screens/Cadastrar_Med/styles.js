@@ -21,11 +21,6 @@ export default StyleSheet.create({
        
         borderRadius: 12
     },
-    textbtn: { 
-      
-        fontSize: 18,
-        fontWeight: 'bold',
        
-        
-    },
+    
 })

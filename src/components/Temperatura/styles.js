@@ -10,14 +10,12 @@ export default StyleSheet.create({
         backgroundColor: '#006400',
         borderTopLeftRadius: 250,
         borderTopRightRadius: 250,
-        //borderBottomLeftRadius: 250,
-        //borderBottomRightRadius: 250,
-        //borderBottomStartRadius: 250,
-       // borderBottomEndRadius: 250,
+        borderColor:  '#000',
+        borderWidth: 2,
     },
     text: {
 
         
-        color: '#000'
+        color: '#fff'
     }
 })

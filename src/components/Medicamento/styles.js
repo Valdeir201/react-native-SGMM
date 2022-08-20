@@ -14,15 +14,14 @@ export default StyleSheet.create({
     },
 
     container: {
-        margin: 10,    
-        height: '25%',
-        width: '90%',
+            
+        height: '95%',
+        width: '98%',
         alignItems: 'center',
         justifyContent: 'flex-start',
        backgroundColor: '#fff',
-       borderRadius: 20,
-       borderColor:  '#FF0000',
-       borderWidth: 5,
+       borderRadius: 10,
+       
     },
     text: {
         backgroundColor: '#FF0',

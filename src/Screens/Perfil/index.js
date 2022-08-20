@@ -13,7 +13,7 @@ export default props => (
         <TouchableOpacity 
         style={Styles.btnn} name="sair" 
         onPress={()=> props.navigation.navigate('Login')}>
-            <Text>
+            <Text style={Styles.textbtn}>
                 Clique para sair
             </Text>
 

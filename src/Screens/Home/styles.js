@@ -14,6 +14,16 @@ export default StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#006400'
     },
+    temp_umi: {
+        height: 155,
+        width:150,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#FF0000',
+        borderRadius: 100,
+        borderColor:  '#000',
+        borderWidth: 1,
+    },
 
     text: {
         color: '#fff'

@@ -9,10 +9,11 @@ const Fundo = require("../../assets/Imagens/fundo01.jpg");
 
 export default props => (
     <ImageBackground imageStyle={{opacity:0.3}}  source={Fundo}  resizeMode='cover' style={Styles.fundo}>
-  
+        
+        <SafeAreaView style={Styles.temp_umi}>
         <Temperatura/>
         <Umidade/>
-        
+        </SafeAreaView>
         <Avisos/>
  
     </ImageBackground>

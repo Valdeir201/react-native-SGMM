@@ -8,7 +8,7 @@ import {
     Cadastrar_Med,
     Editar_Med,
     Lista_Med,
-    Logout
+    Perfil
 } from '../Screens'
 
 const Stack = createNativeStackNavigator()
@@ -72,14 +72,14 @@ export function Lista_MedNavigation() {
         </Stack.Navigator>
     )
 }
-export function LogoutNavigation() {
+export function PerfilNavigation() {
     return (
         <Stack.Navigator
             screenOptions={{ headerShown: true }}
         >
             <Stack.Screen
-                name='Logout'
-                component={Logout}
+                name='Perfil'
+                component={Perfil}
             />
 
          

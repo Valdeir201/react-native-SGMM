@@ -2,21 +2,20 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
     container: {
-
+        marginTop: 4,
         height: 70,
         width: 140,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        backgroundColor: '#7B68EE',
-        //borderTopLeftRadius: 250,
-        //borderTopRightRadius: 250,
+        backgroundColor: '#7B68EE',       
         borderBottomLeftRadius: 250,
         borderBottomRightRadius: 250,
-        //borderBottomStartRadius: 250,
-       // borderBottomEndRadius: 250,
+        borderColor:  '#000',
+        borderWidth: 2,
+    
     },
     text: {
        
-        color: '#000'
-    }
+        color: '#fff',
+    },
 })

@@ -9,7 +9,7 @@ import {
     Cadastrar_MedNavigation,
     Editar_MedNavigation,
     Lista_MedNavigation,
-    LogoutNavigation
+    PerfilNavigation
 
     
 } from './StackNavigation';
@@ -132,13 +132,13 @@ export default function HomeNavigationTabs() {
                 }}
             />
        <Tab.Screen
-            name="LogoutNavigationTab"
-            component={LogoutNavigation}
+            name="PerfilNavigationTab"
+            component={PerfilNavigation}
             options={{
                 tabBarIcon: ({ focused }) => (
                     <>
                         <Icon
-                            name='sign-out-alt'
+                            name='user-circle'
                             size={20}
                             color={focused ? '#7B68EE' : '#006400'}
                         />
@@ -151,7 +151,7 @@ export default function HomeNavigationTabs() {
                                 textAlign: 'center'
                             }}>
                            
-                           Sair
+                           Perfil
                         </Text>
                     </>
                 )

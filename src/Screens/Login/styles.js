@@ -10,22 +10,27 @@ export default StyleSheet.create({
     text: {
         fontWeight: 'bold',
         fontSize: 16,
-        margin: 15
+        margin: 15,
+        color: '#fff'
     },
     logo: { 
         height: 60,
         width: 200,
-        borderRadius: 12
+        padding: 10,
+        borderRadius: 12,
+        borderColor:  '#000',
+        borderWidth: 2,
     },
     input: { 
         marginBottom: 10,
-        padding:10,
+        padding: 10,
         width: 320,
         fontSize: 16,
         fontWeight: 'bold',
         backgroundColor: '#fff',
-       
-        borderRadius: 12
+        borderRadius: 12,
+        borderColor:  '#000',
+        borderWidth: 2,
     },
     btn: { 
         marginBottom: 10,
@@ -36,14 +41,15 @@ export default StyleSheet.create({
         backgroundColor: '#7B68EE',
         alignItems: 'center',
         justifyContent: 'center',
-       
-        borderRadius: 12
+        borderRadius: 12,
+        borderColor:  '#000',
+        borderWidth: 2,
     },
     textbtn: { 
       
         fontSize: 18,
         fontWeight: 'bold',
-       
+        color: '#fff'
         
     },
   
