@@ -23,11 +23,11 @@ const client = new Paho.Client(
           console.log("conectado")
           //client.subscribe("esp32/output")
           //client.subscribe("esp32/counter")
-          client.subscribe("bruno");
+          client.subscribe("temperatura");
           
         const message1 = new Paho.Message('connected')
        
-        message1.destinationName = "bruno"
+        message1.destinationName = "temperatura"
        
         client.send(message1)
        
