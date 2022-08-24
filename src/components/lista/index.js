@@ -1,45 +1,50 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  FlatList,
+  StyleSheet
+} from "react-native";
 import firebase from '../../config/firebase'
-import {View, Text, TouchableOpacity, FlatList, StyleSheet, RecyclerViewBackedScrollViewComponent} from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import React from "react";
+import { useNavigation } from "@react-navigation/native"
+import Styles from '../Avisos/styles'
 
-export default function ListaMed(){
-    //const databese = firebase.firestote()
-    db.collection("cadastromed").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            // doc.data() is never undefined for query doc snapshots
-            console.log(doc.id, " => ", doc.data());
-        });
+export default function MedCad() {
+  const [cadastromed, setCadastromed] = useState([]);
+  const database = firebase.firestore();
+  const navigation = useNavigation();
+
+  function deleteTask(id) {
+    database.collection("cadastromed").doc(id).delete();
+  }
+  useEffect(() => {
+    database.collection("cadastromed").onSnapshot((query) => {
+      const list = [];
+      query.forEach((doc) => {
+        list.push({ ...doc.data(), id: doc.id });
+      });
+      setCadastromed(list);
     });
-
-    return(
-       <FlatList 
-       data={cadastromed}
-       renderItem={({ item }) => 
-       <SafeAreaView  style={Styles.container}>
-
-    
-       <ScrollView style={Styles.scroll}>
-   
-           <Text style={Styles.text}>Preencha todos os dados! </Text>
-
-           <Text style={Styles.input}>  Nome do medicamento: {item.nome} </Text>
-   
-           <Text style={Styles.input}> Temperatura máxima suportada? {item.tempmx}</Text>
-
-           <Text style={Styles.input}> Temperatura mínima suportada {item.tempmn} </Text> 
-
-           <Text style={Styles.input}> Quantidade em estoque {item.qntd} </Text>
-
-           <Text style={Styles.input}> Data de validade {item.data} </Text> 
-
-          
-
-   </ScrollView>    
-
-</SafeAreaView>
-}/>
-            
-    )
+  }, []);
+  return(
+    <View>
+        <FlatList 
+        data = { cadastromed }
+        renderItem={({ item }) => {
+            return(
+                <View style={Styles.container}>
+                    <View >
+                        <Text sytle={Styles.textsub}>nome do medicamento{item.nome}</Text>
+                        <Text sytle={Styles.textsub}>Quantidade:{item.qntd}</Text>
+                        <Text sytle={Styles.textsub}>data de validade:{item.data}</Text>
+                        <Text sytle={Styles.textsub}>temperatuar maxima suportada{item.tempmx}</Text>
+                        <Text sytle={Styles.textsub}>temperatura mínima suportada{item.tempmn}</Text>
+                    </View>
+                 </View>
+            )
+        }}
+        />
+    </View>
+  )
 }
