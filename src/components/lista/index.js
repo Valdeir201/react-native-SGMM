@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import firebase from '../../config/firebase'
 import { useNavigation } from "@react-navigation/native"
-import Styles from '../Avisos/styles'
+import Styles from './styles'
 
 export default function MedCad() {
   const [cadastromed, setCadastromed] = useState([]);
@@ -30,6 +30,7 @@ export default function MedCad() {
   return(
     <View>
         <FlatList 
+         showsVerticalScrollIndicator={false}
         data = { cadastromed }
         renderItem={({ item }) => {
             return(
