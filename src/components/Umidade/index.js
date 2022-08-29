@@ -7,61 +7,10 @@ import Paho from 'paho-mqtt';
 
 
 
-var entrada;
-var mensagem2;
-
-
-const client = new Paho.Client(
-    'broker.emqx.io',
-    8083,
-    '/'
-  )
-  
-  try{
-  client.connect({
-      onSuccess: function () {
-          console.log("conectado")
-          //client.subscribe("esp32/output")
-          //client.subscribe("esp32/counter")
-          client.subscribe("umidade");
-          
-        const message1 = new Paho.Message('connected')
-       
-        message1.destinationName = "umidade"
-       
-        client.send(message1)
-       
-      },
-      onFailure: function () {
-          console.log("Desconectado")
-      }, 
-      //userName: 'emqx',
-      //password: 'public',
-      //useSSL: true,
-  })} catch (error) {
-    alert(error);
-  }
-
-
-export default props => {
-
-    const [msg, setMsg] = useState("10");
-
-
-    client.onMessageArrived = function (messageX) {
-        //alert("Entrou")
-        console.log('Topic:' + messageX.destinationName + ", Message:" + messageX.payloadString);
-        entrada = messageX.destinationName;
-        //mensagem2 = messageX.payloadString;
-        setMsg(messageX.payloadString);
-      
-      }
-
-return(
-
-    
+export default props => (
+ 
     <SafeAreaView style={Styles.container}>
         <Text style={Styles.text}>Umidade:</Text>
-        <Text style={Styles.text}> {msg} <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
+        <Text style={Styles.text}> 70  <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
     </SafeAreaView>
-)};
+);
