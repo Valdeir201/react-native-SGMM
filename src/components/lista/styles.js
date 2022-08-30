@@ -8,7 +8,7 @@ export default StyleSheet.create({
         width: '90%',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FF0000',
+        backgroundColor: '#2461d4',
         borderRadius: 10,
        
     },
@@ -21,7 +21,7 @@ export default StyleSheet.create({
        
        backgroundColor: '#fff',
        borderRadius: 20,
-       borderColor:  '#FF0000',
+       borderColor:  '#2461d4',
        borderWidth: 5,
     },
     text: {
@@ -40,7 +40,7 @@ export default StyleSheet.create({
         width: 120,
         fontSize: 15,
         fontWeight: 'bold',
-        backgroundColor: '#7B68EE',
+        backgroundColor: '#b30707',
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 12,

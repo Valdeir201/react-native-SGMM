@@ -3,6 +3,7 @@ import { View, Text, SafeAreaView, } from 'react-native';
 import Styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Paho from 'paho-mqtt'
+import Styles1 from '../Umidade/styles'
 
 
 
@@ -67,15 +68,21 @@ export default props => {
 
 return (
     
-   
-    <SafeAreaView style={Styles.container}>
+   <View>
+      <View style={Styles.container}>
+        
+        
+          <Text style={Styles.text}>Temperatura:</Text>
+          <Text style={Styles.text}>{msg}  <Icon color={'#fff'}  name='temperature-low' size={14}  /> </Text>
+          
+          
+          
+      </View>
       
-      
-        <Text style={Styles.text}>Temperatura:</Text>
-        <Text style={Styles.text}>{msg}  <Icon color={'#fff'}  name='temperature-low' size={14}  /> </Text>
-        
-        
-        
-    </SafeAreaView>
+        <View style={Styles1.container}>
+          <Text style={Styles1.text}>Umidade:</Text>
+          <Text style={Styles1.text}> <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
+        </View>
+    </View>
  
 )};

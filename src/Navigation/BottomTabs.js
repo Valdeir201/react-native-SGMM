@@ -151,7 +151,7 @@ export default function HomeNavigationTabs() {
                                 textAlign: 'center'
                             }}>
                            
-                           Sair
+                           Perfil
                         </Text>
                     </>
                 )
