@@ -41,6 +41,10 @@ export default function MedCad() {
                         <Text sytle={Styles.textsub}>data de validade:{item.data}</Text>
                         <Text sytle={Styles.textsub}>temperatuar maxima suportada{item.tempmx}</Text>
                         <Text sytle={Styles.textsub}>temperatura mínima suportada{item.tempmn}</Text>
+                        <TouchableOpacity style={Styles.btn} onPress={()=> {
+                          deleteTask(item.id)
+
+                        }}><Text style={Styles.textbtn}> DELETAR</Text></TouchableOpacity>
                     </View>
                  </View>
             )

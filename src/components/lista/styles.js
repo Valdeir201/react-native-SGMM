@@ -33,5 +33,25 @@ export default StyleSheet.create({
         padding: 10,
         color: '#000',
      
+    },
+    btn: { 
+        marginBottom: 5,
+        padding:1,
+        width: 120,
+        fontSize: 15,
+        fontWeight: 'bold',
+        backgroundColor: '#7B68EE',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 12,
+        borderColor:  '#000',
+        borderWidth: 2,
+    },
+    textbtn: { 
+      
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#fff'
+        
     }
 })
