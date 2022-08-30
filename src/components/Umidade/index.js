@@ -11,6 +11,6 @@ export default props => (
  
     <SafeAreaView style={Styles.container}>
         <Text style={Styles.text}>Umidade:</Text>
-        <Text style={Styles.text}> 70  <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
+        <Text style={Styles.text}> <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
     </SafeAreaView>
 );

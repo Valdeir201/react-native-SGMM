@@ -26,10 +26,13 @@ const client = new Paho.Client(
           client.subscribe("temperatura");
           
         const message1 = new Paho.Message('connected')
+        
        
         message1.destinationName = "temperatura"
        
+       
         client.send(message1)
+       
        
       },
       onFailure: function () {
@@ -48,6 +51,7 @@ export default props => {
    
 
     const [msg, setMsg] = useState("10");
+    
 
 
     client.onMessageArrived = function (messageX) {
@@ -58,6 +62,8 @@ export default props => {
         setMsg(messageX.payloadString);
       
       }
+      
+
 
 return (
     
