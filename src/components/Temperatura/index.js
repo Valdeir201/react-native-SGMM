@@ -9,6 +9,7 @@ import Styles1 from '../Umidade/styles'
 
 
 var entrada;
+var entrada1
 var mensagem2;
 
 
@@ -25,14 +26,18 @@ const client = new Paho.Client(
           //client.subscribe("esp32/output")
           //client.subscribe("esp32/counter")
           client.subscribe("temperatura");
+          client.subscribe("umidade");
           
         const message1 = new Paho.Message('connected')
+       //const message2 = new Paho.Message('connected')
         
        
         message1.destinationName = "temperatura"
+        //message2.destinationName = "umidade"
        
        
         client.send(message1)
+        //client.send(message2)
        
        
       },
@@ -52,6 +57,7 @@ export default props => {
    
 
     const [msg, setMsg] = useState("10");
+    const [msg1,setMsg1] = useState("11")
     
 
 
@@ -59,10 +65,17 @@ export default props => {
         //alert("Entrou")
         console.log('Topic:' + messageX.destinationName + ", Message:" + messageX.payloadString);
         entrada = messageX.destinationName;
+        if(messageX.destinationName == "temperatura"){
+          setMsg(messageX.payloadString);
+        }else{
+          setMsg1(messageX.payloadString);
+        }
         //mensagem2 = messageX.payloadString;
-        setMsg(messageX.payloadString);
+        //setMsg(messageX.payloadString);
+        //setMsg1(messageX.payloadString);
       
       }
+      
       
 
 
@@ -81,7 +94,7 @@ return (
       
         <View style={Styles1.container}>
           <Text style={Styles1.text}>Umidade:</Text>
-          <Text style={Styles1.text}> <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
+          <Text style={Styles1.text}> {msg1} <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
         </View>
     </View>
  

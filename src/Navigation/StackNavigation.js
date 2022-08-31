@@ -51,7 +51,7 @@ export function Editar_MedNavigation() {
             screenOptions={{ headerShown: true }}
         >
             <Stack.Screen
-                name='Editar Medicamentos'
+                name='Sobre o APP'
                 component={Editar_Med}
             />
         </Stack.Navigator>

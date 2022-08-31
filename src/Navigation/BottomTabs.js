@@ -125,7 +125,7 @@ export default function HomeNavigationTabs() {
                                     textAlign: 'center'
                                 }}>
                              
-                                Editar
+                                Sobre
                             </Text>
                         </>
                     )

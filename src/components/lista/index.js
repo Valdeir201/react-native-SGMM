@@ -30,7 +30,7 @@ export default function MedCad() {
   return(
     <View>
         <FlatList 
-         showsVerticalScrollIndicator={true}
+         showsVerticalScrollIndicator={false}
         data = { cadastromed }
         renderItem={({ item }) => {
             return(
