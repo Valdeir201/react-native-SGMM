@@ -4,7 +4,9 @@ import {
   Text,
   TouchableOpacity,
   FlatList,
-  StyleSheet
+  StyleSheet, 
+  ScrollView,
+  SafeAreaView
 } from "react-native";
 import firebase from '../../config/firebase'
 import { useNavigation } from "@react-navigation/native"
@@ -28,28 +30,30 @@ export default function MedCad() {
     });
   }, []);
   return(
-    <View>
+    <SafeAreaView  style={Styles.container}>
+        <ScrollView style={Styles.scroll}>
         <FlatList 
          showsVerticalScrollIndicator={false}
         data = { cadastromed }
         renderItem={({ item }) => {
             return(
-                <View style={Styles.container}>
-                    <View >
-                        <Text sytle={Styles.textsub}>nome do medicamento{item.nome}</Text>
-                        <Text sytle={Styles.textsub}>Quantidade:{item.qntd}</Text>
-                        <Text sytle={Styles.textsub}>data de validade:{item.data}</Text>
-                        <Text sytle={Styles.textsub}>temperatuar maxima suportada{item.tempmx}</Text>
-                        <Text sytle={Styles.textsub}>temperatura mínima suportada{item.tempmn}</Text>
+                <View style={Styles.med}>
+                
+                        <Text sytle={Styles.textsub}>Nome: {item.nome}</Text>
+                        <Text sytle={Styles.textsub}>Quantidade: {item.qntd}</Text>
+                        <Text sytle={Styles.textsub}>Data de validade: {item.data}</Text>
+                        <Text sytle={Styles.textsub}>Temperatuar maxima suportada: {item.tempmx}</Text>
+                        <Text sytle={Styles.textsub}>Temperatura mínima suportada: {item.tempmn}</Text>
                         <TouchableOpacity style={Styles.btn} onPress={()=> {
                           deleteTask(item.id)
 
                         }}><Text style={Styles.textbtn}> DELETAR</Text></TouchableOpacity>
-                    </View>
+                  
                  </View>
             )
         }}
         />
-    </View>
+           </ScrollView>  
+    </SafeAreaView>
   )
 }
