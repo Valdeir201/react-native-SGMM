@@ -52,10 +52,18 @@ export default StyleSheet.create({
         color: '#000',
      
     },
-    btn: { 
+    btns: { 
+        
+        flex: 1,
+        justifyContent: "space-between",
+        flexDirection: "row"
+    },
+
+    btn_dele: { 
+        
         marginVertical: 5,
         padding:1,
-        width: '50%',
+        width: '40%',
         fontSize: 15,
         fontWeight: 'bold',
         backgroundColor: '#b30707',
@@ -65,9 +73,23 @@ export default StyleSheet.create({
         borderColor:  '#000',
         borderWidth: 2,
     },
+    btn_edit: { 
+        
+        marginVertical: 5,
+        padding:1,
+        width: '40%',
+        fontSize: 15,
+        fontWeight: 'bold',
+        backgroundColor: '#7B68EE',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 12,
+        borderColor:  '#000',
+        borderWidth: 2,
+    },
     textbtn: { 
       
-        fontSize: 18,
+        fontSize: 15,
         fontWeight: 'bold',
         color: '#fff'
         

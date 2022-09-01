@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import {
   View,
   Text,
@@ -44,11 +45,18 @@ export default function MedCad() {
                         <Text sytle={Styles.textsub}>Data de validade: {item.data}</Text>
                         <Text sytle={Styles.textsub}>Temperatuar maxima suportada: {item.tempmx}</Text>
                         <Text sytle={Styles.textsub}>Temperatura mínima suportada: {item.tempmn}</Text>
-                        <TouchableOpacity style={Styles.btn} onPress={()=> {
+                        
+                        <View style={Styles.btns}>
+                        <TouchableOpacity style={Styles.btn_dele} onPress={()=> {
                           deleteTask(item.id)
 
-                        }}><Text style={Styles.textbtn}> DELETAR</Text></TouchableOpacity>
-                  
+                        }}><Text style={Styles.textbtn}> DELETAR  <Icon color={'#fff'}  name='trash' size={14}  /></Text></TouchableOpacity>
+                 
+                <TouchableOpacity style={Styles.btn_edit} onPress={()=> {
+                        //  deleteTask(item.id)
+
+                        }}><Text style={Styles.textbtn}> EDITAR  <Icon color={'#fff'}  name='edit' size={14}  /></Text></TouchableOpacity>
+                 </View>
                  </View>
             )
         }}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/FontAwesome5'
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 import {
     HomeNavigation,
@@ -112,7 +112,7 @@ export default function HomeNavigationTabs() {
                     tabBarIcon: ({ focused }) => (
                         <>
                             <Icon
-                                name='edit'
+                                name='address-card'
                                 size={20}
                                 color={focused ? '#7B68EE' : '#006400'}
                             />

@@ -48,7 +48,7 @@ return (
     
             <Text style={Styles.text}>Preencha todos os dados! </Text>
 
-            <TextInput style={Styles.input} placeholder=" Nome do medicamento2?"  onChangeText={setNome} value={nome}/>
+            <TextInput style={Styles.input} placeholder=" Nome do medicamento?"  onChangeText={setNome} value={nome}/>
     
             <TextInput style={Styles.input} placeholder=" Temperatura máxima suportada?" onChangeText={setTempmx} value={tempmx} />
 
