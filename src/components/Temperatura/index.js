@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, SafeAreaView, } from 'react-native';
+import { View, Text, SafeAreaView,} from 'react-native';
 import Styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Paho from 'paho-mqtt';
@@ -57,7 +57,7 @@ export default props => {
    
 
     const [msg, setMsg] = useState("22");
-    const [msg1,setMsg1] = useState("70")
+    const [msg1,setMsg1] = useState("70");
     
 
 
@@ -74,14 +74,32 @@ export default props => {
         //setMsg(messageX.payloadString);
         //setMsg1(messageX.payloadString);
       
-      }
-      
-      
+      };
+
+/*
+      var peso = {msg};
+      var status = "";
+     
+      if (peso < 15) {
+         status = "Temperatura baixa"
+      } else if (peso >= 29) {
+        status = "Temperatura alta"
+      } else{
+         status = "Temperatura Normal"
+      } ;
+
+*/
 
 
 return (
-    
+
+   
+
    <View>
+         
+                       
+            
+  
       <View style={Styles.container}>
         
         
@@ -97,5 +115,7 @@ return (
           <Text style={Styles1.text}> {msg1} % <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
         </View>
     </View>
+
+    
  
 )};
