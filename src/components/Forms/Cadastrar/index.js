@@ -44,7 +44,7 @@ return (
     <SafeAreaView  style={Styles.container}>
 
     
-        <ScrollView style={Styles.scroll}>
+        <ScrollView  style={Styles.scroll}>
     
             <Text style={Styles.text}>Preencha todos os dados! </Text>
 

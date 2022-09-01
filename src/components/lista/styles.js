@@ -14,7 +14,7 @@ export default StyleSheet.create({
         height: 165,
         width: '90%',
         padding: 10,
-       
+        
        backgroundColor: '#fff',
        borderRadius: 20,
        borderColor:  '#2461d4',

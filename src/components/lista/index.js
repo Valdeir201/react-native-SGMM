@@ -28,12 +28,16 @@ export default function MedCad() {
         list.push({ ...doc.data(), id: doc.id });
       });
       setCadastromed(list);
+      
     });
+           
   }, []);
+  
   return(
     <SafeAreaView  style={Styles.container}>
-        <ScrollView style={Styles.scroll}>
+        <ScrollView  style={Styles.scroll}>
         <FlatList 
+       
          showsVerticalScrollIndicator={false}
         data = { cadastromed }
         renderItem={({ item }) => {

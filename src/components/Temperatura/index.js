@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, SafeAreaView, } from 'react-native';
 import Styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import Paho from 'paho-mqtt'
-import Styles1 from '../Umidade/styles'
+import Paho from 'paho-mqtt';
+import Styles1 from '../Umidade/styles';
 
 
 
@@ -56,8 +56,8 @@ const client = new Paho.Client(
 export default props => {
    
 
-    const [msg, setMsg] = useState("10");
-    const [msg1,setMsg1] = useState("11")
+    const [msg, setMsg] = useState("22");
+    const [msg1,setMsg1] = useState("70")
     
 
 
@@ -86,15 +86,15 @@ return (
         
         
           <Text style={Styles.text}>Temperatura:</Text>
-          <Text style={Styles.text}>{msg}  <Icon color={'#fff'}  name='temperature-low' size={14}  /> </Text>
+          <Text style={Styles.text}>{msg} C° <Icon color={'#fff'}  name='temperature-low' size={14}  /> </Text>
           
           
           
       </View>
       
         <View style={Styles1.container}>
-          <Text style={Styles1.text}>Umidade:</Text>
-          <Text style={Styles1.text}> {msg1} <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
+          <Text style={Styles1.text}>Umidade: </Text>
+          <Text style={Styles1.text}> {msg1} % <Icon color={'#fff'}  name='burn' size={14}  /> </Text>
         </View>
     </View>
  
