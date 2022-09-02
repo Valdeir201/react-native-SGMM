@@ -48,17 +48,17 @@ return (
     
             <Text style={Styles.text}>Preencha todos os dados! </Text>
 
-            <TextInput style={Styles.input} placeholder=" Nome do medicamento?"  onChangeText={setNome} value={nome}/>
+            <TextInput style={Styles.input} placeholder=" Nome do medicamento?"  onChangeText={setNome} value={nome} testID="inputNome"/>
     
-            <TextInput style={Styles.input} placeholder=" Temperatura máxima suportada?" onChangeText={setTempmx} value={tempmx} />
+            <TextInput style={Styles.input} placeholder=" Temperatura máxima suportada?" onChangeText={setTempmx} value={tempmx} testID="inputTempmx"/>
 
-            <TextInput style={Styles.input} placeholder=" Temperatura mínima suportada?" onChangeText={setTempmn} value={tempmn}  />
+            <TextInput style={Styles.input} placeholder=" Temperatura mínima suportada?" onChangeText={setTempmn} value={tempmn}  testID="inputTempmn"/>
 
-            <TextInput style={Styles.input} placeholder=" Quantidade em estoque?" onChangeText={setQntd} value={qntd} />
+            <TextInput style={Styles.input} placeholder=" Quantidade em estoque?" onChangeText={setQntd} value={qntd} testID="inputQntd"/>
 
-            <TextInput style={Styles.input} placeholder=" Data de validade?" onChangeText={setData} value={data} />
+            <TextInput style={Styles.input} placeholder=" Data de validade?" onChangeText={setData} value={data} testID="inputData"/>
 
-            <TouchableOpacity style={Styles.btn} onPress={addcastromed} >
+            <TouchableOpacity testID="Cadastro" style={Styles.btn} onPress={addcastromed} >
              <Text style={Styles.textbtn} > Cadastrar </Text>
             </TouchableOpacity>
 

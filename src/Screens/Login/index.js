@@ -29,10 +29,10 @@ const Fundo = require("../../assets/Imagens/fundo01.jpg");
 
  <Text style={Styles.text}>Login obrigatório para acessar o sistema!</Text>
 
- <TextInput style={Styles.input} placeholder="  Digite seu usuário"  onChangeText={(text) => setEmail(text)}/>
- <TextInput style={Styles.input} secureTextEntry={true} placeholder="  Digite sua senha"  onChangeText={(text) => setPassword(text)} />
+ <TextInput style={Styles.input}  testID="inputEmail" placeholder="  Digite seu usuário"  onChangeText={(text) => setEmail(text)}/>
+ <TextInput style={Styles.input} testID="inputSenha" secureTextEntry={true} placeholder="  Digite sua senha"  onChangeText={(text) => setPassword(text)} />
 
- <TouchableOpacity style={Styles.btn} onPress={loginFirebase}>
+ <TouchableOpacity  testID="Login" style={Styles.btn} onPress={loginFirebase}>
      <Text style={Styles.textbtn} > Login </Text>
  </TouchableOpacity>
 </ImageBackground>
